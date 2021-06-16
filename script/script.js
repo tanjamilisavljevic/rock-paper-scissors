@@ -1,7 +1,8 @@
 const allComputerChoices = ['👊🏻', '🖐🏻', '✌🏻']
 
 function getComputerChoice() {
-    return Math.floor(Math.random() * allComputerChoices.length)
+    let randomIndex = Math.floor(Math.random() * allComputerChoices.length);
+    return allComputerChoices[randomIndex]
 }
 
 let userChoice = '';
@@ -23,6 +24,36 @@ document.getElementById('scissorsButtonButton').addEventListener('click', functi
 
 document.getElementById('playButton').addEventListener('click', function () {
     const computerChoice = getComputerChoice();
+
+    if (userChoice === '👊🏻' && computerChoice === '👊🏻') {
+        document.getElementById('message').innerHTML ='tie message';
+    }
+    if (userChoice === '🖐🏻' && computerChoice === '🖐🏻') {
+        document.getElementById('message').innerHTML ='tie message';
+    }
+    if (userChoice === '✌🏻' && computerChoice === '✌🏻') {
+        document.getElementById('message').innerHTML ='tie message';
+    }
+
+    if (userChoice === '👊🏻' && computerChoice === '✌🏻') {
+        document.getElementById('message').innerHTML ='you win';
+    }
+    if (userChoice === '🖐🏻' && computerChoice === '👊🏻') {
+        document.getElementById('message').innerHTML ='you win';
+    }
+    if (userChoice === '✌🏻' && computerChoice === '🖐🏻') {
+        document.getElementById('message').innerHTML ='you win';
+    }
+
+    if (userChoice === '👊🏻' && computerChoice === '🖐🏻') {
+        document.getElementById('message').innerHTML ='you lose';
+    }
+    if (userChoice === '🖐🏻' && computerChoice === '✌🏻') {
+        document.getElementById('message').innerHTML ='you lose';
+    }
+    if (userChoice === '✌🏻' && computerChoice === '👊🏻') {
+        document.getElementById('message').innerHTML ='you lose';
+    }
 
 
 })
