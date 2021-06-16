@@ -17,7 +17,7 @@ document.getElementById('paperButton').addEventListener('click', function () {
     console.log(userChoice)
 })
 
-document.getElementById('scissorsButtonButton').addEventListener('click', function () {
+document.getElementById('scissorsButton').addEventListener('click', function () {
     userChoice = '✌🏻'
     console.log(userChoice)
 })
@@ -27,32 +27,41 @@ document.getElementById('playButton').addEventListener('click', function () {
 
     if (userChoice === '👊🏻' && computerChoice === '👊🏻') {
         document.getElementById('message').innerHTML ='tie message';
+        document.getElementById('playButton').innerHTML ='play again';
     }
     if (userChoice === '🖐🏻' && computerChoice === '🖐🏻') {
         document.getElementById('message').innerHTML ='tie message';
+        document.getElementById('playButton').innerHTML ='play again';
     }
     if (userChoice === '✌🏻' && computerChoice === '✌🏻') {
         document.getElementById('message').innerHTML ='tie message';
+        document.getElementById('playButton').innerHTML ='play again';
     }
 
     if (userChoice === '👊🏻' && computerChoice === '✌🏻') {
         document.getElementById('message').innerHTML ='you win';
+        document.getElementById('playButton').innerHTML ='play again';
     }
     if (userChoice === '🖐🏻' && computerChoice === '👊🏻') {
         document.getElementById('message').innerHTML ='you win';
+        document.getElementById('playButton').innerHTML ='play again';
     }
     if (userChoice === '✌🏻' && computerChoice === '🖐🏻') {
         document.getElementById('message').innerHTML ='you win';
+        document.getElementById('playButton').innerHTML ='play again';
     }
 
     if (userChoice === '👊🏻' && computerChoice === '🖐🏻') {
         document.getElementById('message').innerHTML ='you lose';
+        document.getElementById('playButton').innerHTML ='play again';
     }
     if (userChoice === '🖐🏻' && computerChoice === '✌🏻') {
         document.getElementById('message').innerHTML ='you lose';
+        document.getElementById('playButton').innerHTML ='play again';
     }
     if (userChoice === '✌🏻' && computerChoice === '👊🏻') {
         document.getElementById('message').innerHTML ='you lose';
+        document.getElementById('playButton').innerHTML ='play again';
     }
 
 
