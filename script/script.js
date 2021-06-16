@@ -22,47 +22,54 @@ document.getElementById('scissorsButton').addEventListener('click', function () 
     console.log(userChoice)
 })
 
+function playAgain() {
+    document.getElementById('playButton').innerHTML = 'play again';
+}
+
+function tie() {
+    document.getElementById('message').innerHTML = 'tie message';
+    playAgain();
+}
+
+function victory() {
+    document.getElementById('message').innerHTML = 'you win';
+    playAgain();
+}
+
+function defeat() {
+    document.getElementById('message').innerHTML = 'you lose';
+    playAgain();
+}
+
 document.getElementById('playButton').addEventListener('click', function () {
     const computerChoice = getComputerChoice();
 
     if (userChoice === '👊🏻' && computerChoice === '👊🏻') {
-        document.getElementById('message').innerHTML ='tie message';
-        document.getElementById('playButton').innerHTML ='play again';
+        tie();
     }
     if (userChoice === '🖐🏻' && computerChoice === '🖐🏻') {
-        document.getElementById('message').innerHTML ='tie message';
-        document.getElementById('playButton').innerHTML ='play again';
+        tie();
     }
     if (userChoice === '✌🏻' && computerChoice === '✌🏻') {
-        document.getElementById('message').innerHTML ='tie message';
-        document.getElementById('playButton').innerHTML ='play again';
+        tie();
     }
-
     if (userChoice === '👊🏻' && computerChoice === '✌🏻') {
-        document.getElementById('message').innerHTML ='you win';
-        document.getElementById('playButton').innerHTML ='play again';
+        victory();
     }
     if (userChoice === '🖐🏻' && computerChoice === '👊🏻') {
-        document.getElementById('message').innerHTML ='you win';
-        document.getElementById('playButton').innerHTML ='play again';
+        victory();
     }
     if (userChoice === '✌🏻' && computerChoice === '🖐🏻') {
-        document.getElementById('message').innerHTML ='you win';
-        document.getElementById('playButton').innerHTML ='play again';
+        victory();
     }
-
     if (userChoice === '👊🏻' && computerChoice === '🖐🏻') {
-        document.getElementById('message').innerHTML ='you lose';
-        document.getElementById('playButton').innerHTML ='play again';
+        defeat();
     }
     if (userChoice === '🖐🏻' && computerChoice === '✌🏻') {
-        document.getElementById('message').innerHTML ='you lose';
-        document.getElementById('playButton').innerHTML ='play again';
+        defeat();
     }
     if (userChoice === '✌🏻' && computerChoice === '👊🏻') {
-        document.getElementById('message').innerHTML ='you lose';
-        document.getElementById('playButton').innerHTML ='play again';
+        defeat();
     }
-
 
 })
