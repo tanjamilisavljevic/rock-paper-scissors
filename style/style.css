@@ -125,10 +125,10 @@ button:hover{
     to {background-color: #73978b;}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
     .card{
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
     h1{
         font-size: 20px;
