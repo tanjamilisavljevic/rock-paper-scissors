@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <title>Rock, paper, scissors</title>
     <link rel="stylesheet" href="style\style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="card">
+    <h1> ROCK, PAPER, SCISSORS</h1>
 
-<h1> ROCK, PAPER, SCISSORS</h1>
+    <div class="buttonWrapper">
+        <button class="iconButton" id="rockButton">👊🏻</button>
+        <button class="iconButton" id="paperButton">🖐🏻</button>
+        <button class="iconButton" id="scissorsButton">✌🏻</button>
+    </div>
 
-<div class="buttonWrapper">
-<button id="rockButton">👊🏻</button>
-<button id="paperButton">🖐🏻</button>
-<button id="scissorsButton">✌🏻</button>
+    <button id="playButton"> Play! </button>
+
+    <p id="message"></p>
+
+    <div class="scoreWrapper">
+        <div>
+            <p>YOU</p>
+            <p class="score" id="scoreUser">  </p>
+        </div>
+        <div>
+            <p>COMPUTER</p>
+            <p class="score" id="scoreComputer">  </p>
+        </div>
+    </div>
+
 </div>
-
-<button id="playButton"> Play! </button>
-
-<p id="message"></p>
-
-
 <script src="script/script.js"></script>
 </body>
 </html>
