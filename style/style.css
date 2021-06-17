@@ -26,6 +26,10 @@ h1{
 }
 .iconButton{
     min-width: 100px;
+    background-color: #efefef;
+}
+.playButton{
+    background-color: #efefef;
 }
 button{
     margin: 10px;
@@ -33,7 +37,6 @@ button{
     font-size: 40px;
     font-family: 'Press Start 2P', cursive;
     border-radius: 25px;
-    background-color: #efefef;
 }
 button:hover{
     cursor: pointer;
