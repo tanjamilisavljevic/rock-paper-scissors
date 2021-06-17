@@ -33,6 +33,7 @@ button{
     font-size: 40px;
     font-family: 'Press Start 2P', cursive;
     border-radius: 25px;
+    background-color: #efefef;
 }
 button:hover{
     cursor: pointer;
