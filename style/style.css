@@ -28,7 +28,7 @@ h1{
     min-width: 100px;
     background-color: #efefef;
 }
-.playButton{
+#playButton{
     background-color: #efefef;
 }
 button{
