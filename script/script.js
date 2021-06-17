@@ -9,7 +9,9 @@ let computerScore = 0;
 document.getElementById('scoreUser').innerHTML = '' + userScore;
 document.getElementById('scoreComputer').innerHTML = '' + computerScore;
 
-
+function addStylingForComputerChoice(element) {
+    document.getElementById(element).classList.add('computerChoice');
+}
 function makeSelected(element) {
     document.getElementById(element).classList.add("selectedButton");
 }
@@ -98,30 +100,49 @@ document.getElementById('playButton').addEventListener('click', function () {
 
     if (userChoice === '👊🏻' && computerChoice === '👊🏻') {
         tie();
+        document.getElementById('computerChoice').innerHTML = 'Computer picked 👊🏻';
+        addStylingForComputerChoice('computerChoice');
     }
     if (userChoice === '🖐🏻' && computerChoice === '🖐🏻') {
         tie();
+        document.getElementById('computerChoice').innerHTML = 'Computer picked 🖐🏻';
+        addStylingForComputerChoice('computerChoice');
     }
     if (userChoice === '✌🏻' && computerChoice === '✌🏻') {
         tie();
+        document.getElementById('computerChoice').innerHTML = 'Computer picked ✌🏻';
+        addStylingForComputerChoice('computerChoice');
+
     }
     if (userChoice === '👊🏻' && computerChoice === '✌🏻') {
         victory();
+        document.getElementById('computerChoice').innerHTML = 'Computer picked ✌🏻';
+        addStylingForComputerChoice('computerChoice');
     }
     if (userChoice === '🖐🏻' && computerChoice === '👊🏻') {
         victory();
+        document.getElementById('computerChoice').innerHTML = 'Computer picked 👊🏻';
+        addStylingForComputerChoice('computerChoice');
     }
     if (userChoice === '✌🏻' && computerChoice === '🖐🏻') {
         victory();
+        document.getElementById('computerChoice').innerHTML = 'Computer picked 🖐🏻';
+        addStylingForComputerChoice('computerChoice');
     }
     if (userChoice === '👊🏻' && computerChoice === '🖐🏻') {
         defeat();
+        document.getElementById('computerChoice').innerHTML = 'Computer picked 🖐🏻';
+        addStylingForComputerChoice('computerChoice');
     }
     if (userChoice === '🖐🏻' && computerChoice === '✌🏻') {
         defeat();
+        document.getElementById('computerChoice').innerHTML = 'Computer picked ✌🏻';
+        addStylingForComputerChoice('computerChoice');
     }
     if (userChoice === '✌🏻' && computerChoice === '👊🏻') {
         defeat();
+        document.getElementById('computerChoice').innerHTML = 'Computer picked 👊🏻';
+        addStylingForComputerChoice('computerChoice');
     }
 
 })
