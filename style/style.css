@@ -136,6 +136,11 @@ button:hover{
     }
     .buttonWrapper{
         padding-bottom: 10px;
+        display: flex;
+    }
+    .iconButton{
+      margin: 1em;
+      min-width: 80px;
     }
     button {
         font-size: 20px;
